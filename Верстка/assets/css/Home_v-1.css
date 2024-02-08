@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 135px;
+  padding: 48px 0 0 96px;
+}
+.header__content {
+  width: 1248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter;
+  font-size: 18px;
+}
+.header__content nav {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 425px 0 103px;
+}
+.header__content a {
+  text-decoration: none;
+  color: #606060;
+}
+.header__content__authorization {
+  width: 233px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.header__content__authorization p {
+  color: #606060;
+}
+.header__content__authorization__btn {
+  width: 122px;
+  height: 63px;
+  background-color: #6C5FBC;
+  color: #F9F9F9;
+  border: none;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 700;
+}/*# sourceMappingURL=Home_v-1.css.map */
