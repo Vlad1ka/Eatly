@@ -10,6 +10,10 @@
   font-family: PlusJakartaSans;
   src: url(../fonts/PlusJakartaSans-Regular.ttf);
 }
+@font-face {
+  font-family: PublicSans;
+  src: url(../fonts/PublicSans-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -164,4 +168,84 @@ body {
 }
 .banner__img {
   margin: 50px 0 0 37px;
+}
+
+.success {
+  width: 1440px;
+  height: 220px;
+  background-color: #5C4EAE;
+  padding: 57px 0 0 250px;
+}
+.success__content {
+  width: 942px;
+  display: flex;
+  justify-content: space-between;
+}
+.success__content p:nth-of-type(1) {
+  font-family: PublicSans;
+  color: white;
+  font-size: 43px;
+  font-weight: 700;
+  text-align: center;
+}
+.success__content p:nth-of-type(2) {
+  font-family: Inter;
+  color: #C5BFED;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 11px;
+  text-align: center;
+  line-height: 21.6px;
+}
+.success__content hr {
+  border: 1px solid #C5C5C5;
+  opacity: 0.15;
+}
+.success__content__clients {
+  width: 264px;
+}
+.success__content__dishes {
+  width: 206px;
+}
+.success__content__support {
+  width: 208px;
+}
+
+.quality {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 104px 81px 0 97px;
+}
+.quality__img img:nth-of-type(1) {
+  margin-top: 16px;
+}
+.quality__img img:nth-of-type(2) {
+  position: absolute;
+  margin: 0 0 50px 15px;
+}
+.quality__text {
+  width: 560px;
+  margin-top: 91px;
+}
+.quality__text__title {
+  width: 500px;
+  font-family: Poppins;
+  font-size: 51px;
+  font-weight: 700;
+  color: #18181B;
+  line-height: 58.2px;
+}
+.quality__text__title span {
+  color: #6C5FBC;
+}
+.quality__text__advantages__plus {
+  display: flex;
+  align-items: first baseline;
+}
+.quality__text__advantages .tochka {
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
 }/*# sourceMappingURL=Home_v-1.css.map */
