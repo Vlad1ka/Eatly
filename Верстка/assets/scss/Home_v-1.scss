@@ -195,12 +195,15 @@ body{
     width: 1440px;
     height: 220px;
     background-color: #5C4EAE;
-    padding: 57px 0 0 250px;
+    display: flex;
 
     &__content{
         width: 942px;
         display: flex;
         justify-content: space-between;
+        padding: 57px 0 0 0;
+        margin-left: 250px;
+        position: absolute;
 
         p:nth-of-type(1){
             font-family: PublicSans;
@@ -221,6 +224,7 @@ body{
         }
 
         hr{
+            height: 123px;
             border: 1px solid #C5C5C5;
             opacity: 0.15;
         }
@@ -236,6 +240,10 @@ body{
         &__support{
             width: 208px;
         }
+    }
+
+    img:nth-of-type(2){
+        margin-left: 833px;
     }
 }
 
