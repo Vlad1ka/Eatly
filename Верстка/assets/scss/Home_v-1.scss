@@ -18,6 +18,11 @@
     src: url(../fonts/PublicSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +32,7 @@
 body{
     width: 1440px;
     margin: 0 auto;
+    background-color: #F9F9F9;
 }
 
 .header{
@@ -248,10 +254,12 @@ body{
 }
 
 .quality{
-    width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    padding: 104px 81px 0 97px;
+    .container{
+        width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        padding: 104px 81px 0 97px; 
+    }
 
     &__img{
         img:nth-of-type(1){
@@ -282,18 +290,214 @@ body{
         }
 
         &__advantages{
+            margin-top: 35px;
 
             &__plus{
+                width: 518px;
                 display: flex;
+                justify-content: space-between;
                 align-items: first baseline;
+                margin-top: 28px;
+
+                p{
+                    width: 500px;
+                    font-family: Inter;
+                    font-size: 20px;
+                    line-height: 30.5px;
+                    color: #676767;
+                }
             }
             .tochka{
-                width: 4px;
-                height: 5px;
+                width: 6px;
+                height: 6px;
                 border-radius: 50%;
-                background-color: red;
+                background-color: #676767;
             }
         }
         
+        &__download{
+            display: flex;
+
+            &__button{
+                width: 185px;
+                height: 63px;
+                background-color: #6C5FBC;
+                color: white;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                margin-top: 66px;
+                padding-left: 26px;
+                border: none;
+                border-radius: 15px;
+                img{
+                    margin-left: 15px;
+                } 
+            }
+
+            &__arrow{
+                margin: 120px 0 0 160px;
+                position: absolute;
+            }
+        }
+    }
+    hr{
+        width: 1262px;
+        margin: 120px 0 0 97px;
+        border: 1px solid #CBCBCB;
+    }
+}
+
+.restaurants{
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    &__title{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 45px;
+        color: #323142;
+        font-weight: 600;
+        span{
+            color: #6C5FBC;
+        }
+    }
+    &__cards{
+        margin-top: 86px;
+        display: flex;
+        justify-content: space-between;
+        &__card{
+            &__img{
+                img{
+                    width: 396px;
+                    height: 176px;
+                    border-radius: 30px 30px 0 0;
+                }
+            }
+            
+
+            &__text{
+                width: 396px;
+                height: 124px;
+                background-color: white;
+                border-radius: 0 0 30px 30px;
+                padding: 11px 27px 0 34px;
+                display: flex;
+                justify-content: space-between;
+
+                &__scroll{
+
+                    &__category{
+                        width: 66px;
+                        height: 25px;
+                        background-color: #F7EDD0;
+                        color: #DAA31A;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        border-radius: 5.4px;
+                        text-align: center;
+                        padding-top: 3px;
+                    }
+
+                    &__heading{
+                        font-family: Poppins;
+                        font-size: 26px;
+                        font-weight: 600;
+                        color: #323142;
+                    }
+
+                    &__description{
+                        width: 140px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: Manrope;
+                        font-size: 20px;
+                        color: #8E97A6;
+                    }
+
+                }
+                &__img{
+                    margin: 53px 0 0 68px;
+                }
+            }
+        }
+
+        &__card1{
+            &__img{
+                img{
+                    width: 396px;
+                    height: 176px;
+                    border-radius: 30px 30px 0 0;
+                }
+            }
+
+            &__text{
+                width: 396px;
+                height: 124px;
+                background-color: white;
+                border-radius: 0 0 30px 30px;
+                padding: 11px 27px 0 34px;
+                display: flex;
+                justify-content: space-between;
+
+                &__scroll{
+
+                    &__category{
+                        width: 66px;
+                        height: 25px;
+                        background-color: #F7C5BA;
+                        color: #FB471D;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        border-radius: 5.4px;
+                        text-align: center;
+                        padding-top: 3px;
+                    }
+
+                    &__heading{
+                        font-family: Poppins;
+                        font-size: 26px;
+                        font-weight: 600;
+                        color: #323142;
+                    }
+
+                    &__description{
+                        width: 140px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: Manrope;
+                        font-size: 20px;
+                        color: #8E97A6;
+                    }
+
+                }
+                &__img{
+                    margin: 53px 0 0 68px;
+                }
+            }
+        }
+    }
+
+    &__view{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ACADB9;
+        display: flex;
+        margin: 66px 0 0 1122px;
+
+        p{
+            margin-right: 20px;
+        }
+    }
+
+    hr{
+        width: 1246px;
+        border: 1px solid #CBCBCB;
+        margin-top: 120px;
     }
 }
