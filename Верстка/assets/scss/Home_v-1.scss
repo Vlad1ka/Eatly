@@ -177,10 +177,10 @@ body{
             align-items: center;
             margin-top: 33px;
             
-
             &__stars{
                 margin-left: 20px;
             }
+
             p{
                 margin-left: 10px;
                 font-weight: 500;
@@ -238,11 +238,9 @@ body{
         &__clients{
             width: 264px;
         }
-
         &__dishes{
             width: 206px;
         }
-
         &__support{
             width: 208px;
         }
@@ -377,7 +375,6 @@ body{
                 }
             }
             
-
             &__text{
                 width: 396px;
                 height: 124px;
@@ -386,10 +383,11 @@ body{
                 padding: 11px 27px 0 34px;
                 display: flex;
                 justify-content: space-between;
+                box-shadow: 0 50px 0 0 #E5E5E5B2;
 
                 &__scroll{
 
-                    &__category{
+                    &__btnHealthy{
                         width: 66px;
                         height: 25px;
                         background-color: #F7EDD0;
@@ -397,55 +395,10 @@ body{
                         font-family: Poppins;
                         font-size: 12px;
                         border-radius: 5.4px;
-                        text-align: center;
-                        padding-top: 3px;
+                        border: none;
                     }
 
-                    &__heading{
-                        font-family: Poppins;
-                        font-size: 26px;
-                        font-weight: 600;
-                        color: #323142;
-                    }
-
-                    &__description{
-                        width: 140px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        font-family: Manrope;
-                        font-size: 20px;
-                        color: #8E97A6;
-                    }
-
-                }
-                &__img{
-                    margin: 53px 0 0 68px;
-                }
-            }
-        }
-
-        &__card1{
-            &__img{
-                img{
-                    width: 396px;
-                    height: 176px;
-                    border-radius: 30px 30px 0 0;
-                }
-            }
-
-            &__text{
-                width: 396px;
-                height: 124px;
-                background-color: white;
-                border-radius: 0 0 30px 30px;
-                padding: 11px 27px 0 34px;
-                display: flex;
-                justify-content: space-between;
-
-                &__scroll{
-
-                    &__category{
+                    &__btnTrending{
                         width: 66px;
                         height: 25px;
                         background-color: #F7C5BA;
@@ -453,8 +406,7 @@ body{
                         font-family: Poppins;
                         font-size: 12px;
                         border-radius: 5.4px;
-                        text-align: center;
-                        padding-top: 3px;
+                        border: none;
                     }
 
                     &__heading{
@@ -499,5 +451,240 @@ body{
         width: 1246px;
         border: 1px solid #CBCBCB;
         margin-top: 120px;
+    }
+}
+
+.dishes{
+    width: 1246px;
+    margin: 0 auto;
+    &__title{
+        text-align: center;
+        margin-top: 100px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 45px;
+        color: #323142;
+
+        span{
+            color: #6C5FBC;
+        }
+    }
+
+    &__cards{
+        width: 1247px;
+        margin: 76px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        &__card{
+            width: 225px;
+            height: 390px;
+            background-color: #FFFFFF;
+            border-radius: 35px;
+            box-shadow: 0 50px 0 0 #E5E5E5B2;
+
+            &__img{
+                width: 225px;
+                img:nth-of-type(1){
+                    position: absolute;
+                    margin: 24px 0 0 181px;
+                }
+                &__ch{
+                    margin: 26px 0 0 6px;
+                }
+
+                &__sw{
+                    margin: 37px 0 13px 15px;
+                }
+            }
+
+            &__scroll{
+                padding: 0 0 0 22px;
+
+                &__btnHealthy{
+                    width: 59px;
+                    height: 22px;
+                    border-radius: 3px;
+                    border: none;
+                    color: #DAA31A;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    background-color: #F7EDD0;
+                }
+
+                &__btnTrending{
+                    width: 64px;
+                    height: 22px;
+                    border-radius: 3px;
+                    border: none;
+                    color: #FB471D;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    background-color: #F7C5BA;
+                }
+
+                &__btnSupreme{
+                    width: 64px;
+                    height: 22px;
+                    border-radius: 3px;
+                    border: none;
+                    color: #309D5B;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    background: rgba(#33AC64, 0.2);
+                }
+                
+                &__heading{
+                    font-family: Poppins;
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: #323142;
+                }
+
+                &__description{
+                    width: 125px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 17px;
+                    font-family: Manrope;
+                    color: #8E97A6;
+                    align-items: center;
+                }
+
+                &__price{
+                    width: 174px;
+                    margin-top: 13px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: Manrope;
+                    font-size: 26px;
+                    font-weight: 700;
+                    color: #323142;
+                    
+                    span{
+                        font-size: 19px;
+                        color: #8E97A6;
+                    }
+                }
+            }
+        }
+        
+        &__card:nth-of-type(2){
+            width: 225px;
+            height: 390px;
+            background-color: white;
+            border-radius: 35px;
+        }
+    }
+
+    &__view{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ACADB9;
+        display: flex;
+        margin: 66px 0 0 1122px;
+
+        p{
+            margin-right: 20px;
+        }
+    }
+
+    hr{
+        width: 1246px;
+        border: 1px solid #CBCBCB;
+        margin-top: 120px;
+    }
+}
+
+.control{
+    width: 1246px;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__text{
+
+        &__title{
+            width: 600px;
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 61px;
+            color: #18181B;
+
+            span{
+                color: #6C5FBC;
+            }
+        }
+
+        &__cards{
+            margin: 33px 0 0 0;
+
+            &__card{
+                width: 345px;
+                height: 88px;
+                border-radius: 12px;
+                background-color: white;
+                display: flex;
+                margin: 15px 0 0 0;
+
+                img{
+                    width: 77px;
+                    height: 80px;
+                    margin: 4px 0 0 17px;
+                }
+
+                &__content{
+                    width: 231px;
+                    margin: 17px 0 0 19px;
+                    font-family: Poppins;
+                    color: #323142;
+
+                    p:nth-of-type(1){
+                        font-size: 19px;
+                        font-weight: 600;
+                    }
+                    p:nth-of-type(2){
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    p:nth-of-type(3){
+                        font-size: 13px;
+                        color: #ACADB9;
+                        text-align: right;
+                        margin: 0 17px 0 0;
+                    }
+
+                    &__red{
+                        color: #F1534E;
+                    }
+                }
+            }
+        }
+    }
+
+    &__purchases{
+        width: 534px;
+        height: 466px;
+        background-color: white;
+        border-radius: 25px;
+        padding: 38px 0 0 40px;
+
+        &__menu{
+            width: 456px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Manrope;
+            color: #1A202C;
+
+            &__title{
+                font-size: 28px;
+                font-weight: 800;
+                
+            }
+        }
     }
 }
