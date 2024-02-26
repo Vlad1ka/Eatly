@@ -599,11 +599,15 @@ body{
 }
 
 .control{
-    width: 1246px;
-    margin: 0 auto;
-    padding: 100px 0 0 0;
-    display: flex;
-    justify-content: space-between;
+
+    .container{
+        width: 1246px;
+        margin: 0 auto;
+        padding: 100px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
 
     &__text{
 
@@ -621,7 +625,7 @@ body{
         }
 
         &__cards{
-            margin: 33px 0 0 0;
+            margin: 48px 0 0 0;
 
             &__card{
                 width: 345px;
@@ -677,14 +681,106 @@ body{
             width: 456px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-family: Manrope;
             color: #1A202C;
 
             &__title{
                 font-size: 28px;
                 font-weight: 800;
-                
+            }
+
+            &__btn{
+                width: 176px;
+                height: 53px;
+                background-color: #FAFAFA;
+                font-weight: 600;
+                font-size: 19px;
+                font-family: Manrope;
+                letter-spacing: 0.63px;
+                border-radius: 13px;
+                border: none;
+                color: #1A202C;
+                display: flex;
+                align-items: center;
+                padding: 0 0 0 19px;
+                img{
+                    margin-left: 6px;
+                }
             }
         }
+
+        &__cards{
+            margin-top: 38px;
+            &__costs{
+                width: 460px;
+                height: 135px;
+                border: 1.57px solid #EDF2F7;
+                border-radius: 19px;
+                padding: 25px 25px 0 25px;
+                margin-top: 22px;
+                font-family: Manrope;
+
+                &__content{
+                    display: flex;
+                    align-items: center;
+
+                    &__info{
+                        width: 140px;
+                        margin-left: 19px;
+                        p:nth-of-type(1){
+                            font-size: 19px;
+                            font-weight: 800;
+                            color: #1A202C;
+                            letter-spacing: 0.63px;
+                        }
+                        p:nth-of-type(2){
+                            font-size: 16px;
+                            color: #A0AEC0;
+                            letter-spacing: 0.63px;
+                            margin-top: 3px;
+                        }
+                    }
+
+                    &__price{
+                        width: 201px;
+                        text-align: right;
+                        font-size: 22px;
+                        font-weight: 800;
+                    }
+                }
+
+                &__lines{
+                    margin-top: 21px;
+                    hr{
+                        height: 10px;
+                        background-color: #6C5FBC;
+                        border-radius: 80px;
+                        border: none;
+                    }
+                    hr:nth-of-type(1){
+                        width: 297px;
+                        position: absolute;
+                    }
+                    hr:nth-of-type(2){
+                        width: 408px;
+                        opacity: 0.2;
+                    }
+
+                    &__VU{
+                        hr{
+                            background-color: #FBAD18;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__hr{
+        width: 1246px;
+        border: 1px solid #CBCBCB;
+        margin: 0 auto;
+        margin-top: 120px;
     }
 }

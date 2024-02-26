@@ -522,7 +522,7 @@ body {
   margin-top: 120px;
 }
 
-.control {
+.control .container {
   width: 1246px;
   margin: 0 auto;
   padding: 100px 0 0 0;
@@ -541,7 +541,7 @@ body {
   color: #6C5FBC;
 }
 .control__text__cards {
-  margin: 33px 0 0 0;
+  margin: 48px 0 0 0;
 }
 .control__text__cards__card {
   width: 345px;
@@ -590,10 +590,93 @@ body {
   width: 456px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: Manrope;
   color: #1A202C;
 }
 .control__purchases__menu__title {
   font-size: 28px;
   font-weight: 800;
+}
+.control__purchases__menu__btn {
+  width: 176px;
+  height: 53px;
+  background-color: #FAFAFA;
+  font-weight: 600;
+  font-size: 19px;
+  font-family: Manrope;
+  letter-spacing: 0.63px;
+  border-radius: 13px;
+  border: none;
+  color: #1A202C;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 19px;
+}
+.control__purchases__menu__btn img {
+  margin-left: 6px;
+}
+.control__purchases__cards {
+  margin-top: 38px;
+}
+.control__purchases__cards__costs {
+  width: 460px;
+  height: 135px;
+  border: 1.57px solid #EDF2F7;
+  border-radius: 19px;
+  padding: 25px 25px 0 25px;
+  margin-top: 22px;
+  font-family: Manrope;
+}
+.control__purchases__cards__costs__content {
+  display: flex;
+  align-items: center;
+}
+.control__purchases__cards__costs__content__info {
+  width: 140px;
+  margin-left: 19px;
+}
+.control__purchases__cards__costs__content__info p:nth-of-type(1) {
+  font-size: 19px;
+  font-weight: 800;
+  color: #1A202C;
+  letter-spacing: 0.63px;
+}
+.control__purchases__cards__costs__content__info p:nth-of-type(2) {
+  font-size: 16px;
+  color: #A0AEC0;
+  letter-spacing: 0.63px;
+  margin-top: 3px;
+}
+.control__purchases__cards__costs__content__price {
+  width: 201px;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 800;
+}
+.control__purchases__cards__costs__lines {
+  margin-top: 21px;
+}
+.control__purchases__cards__costs__lines hr {
+  height: 10px;
+  background-color: #6C5FBC;
+  border-radius: 80px;
+  border: none;
+}
+.control__purchases__cards__costs__lines hr:nth-of-type(1) {
+  width: 297px;
+  position: absolute;
+}
+.control__purchases__cards__costs__lines hr:nth-of-type(2) {
+  width: 408px;
+  opacity: 0.2;
+}
+.control__purchases__cards__costs__lines__VU hr {
+  background-color: #FBAD18;
+}
+.control__hr {
+  width: 1246px;
+  border: 1px solid #CBCBCB;
+  margin: 0 auto;
+  margin-top: 120px;
 }/*# sourceMappingURL=Home_v-1.css.map */
