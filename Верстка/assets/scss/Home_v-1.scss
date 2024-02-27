@@ -23,6 +23,11 @@
     src: url(../fonts/Manrope-Regular.ttf);
 }
 
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -676,6 +681,8 @@ body{
         background-color: white;
         border-radius: 25px;
         padding: 38px 0 0 40px;
+        box-shadow: 0 100px 0 0 rgba(#323142, 0.2);
+
 
         &__menu{
             width: 456px;
@@ -778,9 +785,240 @@ body{
     }
 
     &__hr{
+        hr{
+            width: 1246px;
+            border: 1px solid #CBCBCB;
+            margin: 0 auto;
+            margin-top: 120px;
+        }
+    }
+}
+
+.reviews{
+    width: 1440px;
+    padding: 116px 0 0 84px;
+    margin: 0 auto;
+
+    &__title{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 45px;
+        font-weight: 600;
+        color: #6C5FBC;
+        span{
+            color: #323142;
+        }
+    }
+
+    &__cards{
+        width: 1676px;
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0 35px 0;
+
+        &__fullCard{
+            width: 528px;
+            height: 346px;
+            border-radius: 20px;
+            padding: 38px 0 0 43px;
+            background-color: white;
+
+            &__info{
+                width: 436px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__name{
+                    margin-right: 155px;
+                    font-weight: 500;
+                    p:nth-of-type(1){
+                        font-family: Poppins;
+                        font-size: 21px;
+                        color: #030314;
+                    }
+                    p:nth-of-type(2){
+                        font-family: Quicksand;
+                        font-size: 17px;
+                        color: #5E5D5D;
+                    }
+                }
+            }
+
+            &__text{
+                width: 442px;
+                margin: 32px 0 0 0;
+                line-height: 26.12px;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: italic;
+                color: #636363;
+                text-align: justify;
+            }
+
+            &__stars{
+                margin: 39px 0 0 0;
+                img{
+                    height: 23px;
+                }
+            }
+        }
+
+        &__otherCards{
+            display: flex;
+            justify-content: space-between;
+            &__half{
+                width: 528px;
+                height: 239px;
+                border-radius: 20px;
+                padding: 38px 0 0 43px;
+                background-color: white;
+
+                &__text{
+                    width: 442px;
+                    line-height: 26.12px;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: italic;
+                    color: #636363;
+                    text-align: justify;
+                }
+    
+                &__stars{
+                    margin: 39px 0 0 0;
+                    img{
+                        height: 23px;
+                    }
+                }
+            }
+        }
+        &__slider{
+            position: absolute;
+            margin: 327px 0 0 575px;
+
+            hr{
+                height: 11px;
+                border-radius: 50px;
+                border: none;
+                position: absolute;
+                background-color: #6C5FBC;
+            }
+            hr:nth-of-type(1){  
+                width: 191px;
+            }
+            hr:nth-of-type(2){
+                width: 667px;
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
+.sell{
+    
+    &__content{
+        width: 1214px;
+        height: 280px;
+        margin: 182px 0 0 130px;
+        background-color: #6C5FBC;
+        background-image: url(../img/Home/background.png);
+        background-position: 50px 0;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 30px;
+        padding: 37px 0 0 66px;
+
+        &__title{
+            font-family: Poppins;
+            font-weight: 800;
+            font-size: 70px;
+            color: white;
+        }
+
+        &__email{
+            width: 440px;
+            height: 68px;
+            margin-top: 9px;
+            padding: 0 6px 0 22px;
+            background-color: white;
+            border-radius: 15px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            font-family: Poppins;
+            color: #878787;
+
+            &__btn{
+                width: 133px;
+                height: 54px;
+                border-radius: 11.25px;
+                border: none;
+                background-color: #6C5FBC;
+                font-weight: 500;
+                font-size: 15px;
+                letter-spacing: 0.45px;
+                color: #F7F8FA;
+            }
+        }
+
+        img{
+            position: absolute;
+            margin: 27px 0 0 802px;
+        }
+    }
+}
+
+.footer{
+    width: 1440px;
+    height: 345px;
+    margin-top: 156px;
+    padding: 96px 90px 0 103px;
+    background-color: #EAEAEA;
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        nav{
+            width: 456px;
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                text-decoration: none;
+                color: #999999;
+                font-size: 18px;
+                font-family: Inter;
+                font-weight: 500;
+            }
+        }
+    }
+
+    hr{
         width: 1246px;
-        border: 1px solid #CBCBCB;
-        margin: 0 auto;
-        margin-top: 120px;
+        height: 0;
+        border: 1px solid #818181;
+        opacity: 0.25;
+    }
+
+    &__media{
+        margin: 57px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-family: Inter;
+            font-size: 17px;
+            font-weight: 500;
+            color: #999999;
+        }
+
+        &__icons{
+            width: 235px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
