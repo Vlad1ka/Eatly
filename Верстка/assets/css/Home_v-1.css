@@ -329,6 +329,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.restaurants__cards__card {
+  width: 396px;
+  height: 305px;
+  border-radius: 30px;
+  box-shadow: 1px 40px 55px 5px #CBCBCB;
+}
 .restaurants__cards__card__img img {
   width: 396px;
   height: 176px;
@@ -342,7 +348,6 @@ body {
   padding: 11px 27px 0 34px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 50px 0 0 rgba(229, 229, 229, 0.6980392157);
 }
 .restaurants__cards__card__text__scroll__btnHealthy {
   width: 66px;
@@ -425,7 +430,7 @@ body {
   height: 390px;
   background-color: #FFFFFF;
   border-radius: 35px;
-  box-shadow: 0 50px 0 0 rgba(229, 229, 229, 0.6980392157);
+  box-shadow: 1px 40px 75px 5px #CBCBCB;
 }
 .dishes__cards__card__img {
   width: 225px;
@@ -589,7 +594,7 @@ body {
   background-color: white;
   border-radius: 25px;
   padding: 38px 0 0 40px;
-  box-shadow: 0 100px 0 0 rgba(50, 49, 66, 0.2);
+  box-shadow: 1px 140px 100px 1px #EDF2F7;
 }
 .control__purchases__menu {
   width: 456px;
@@ -713,6 +718,7 @@ body {
   border-radius: 20px;
   padding: 38px 0 0 43px;
   background-color: white;
+  box-shadow: 2px 20px 75px 8px #CBCBCB;
 }
 .reviews__cards__fullCard__info {
   width: 436px;
@@ -760,6 +766,7 @@ body {
   border-radius: 20px;
   padding: 38px 0 0 43px;
   background-color: white;
+  box-shadow: 2px 20px 75px 8px #CBCBCB;
 }
 .reviews__cards__otherCards__half__text {
   width: 442px;
@@ -793,6 +800,7 @@ body {
 .reviews__cards__slider hr:nth-of-type(2) {
   width: 667px;
   opacity: 0.2;
+  box-shadow: 2px -20px 75px 9px #CBCBCB;
 }
 
 .sell__content {

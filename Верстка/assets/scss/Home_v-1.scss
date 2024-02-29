@@ -381,6 +381,11 @@ body{
         display: flex;
         justify-content: space-between;
         &__card{
+            width: 396px;
+            height: 305px;
+            border-radius: 30px ;
+            box-shadow: 1px 40px 55px 5px #CBCBCB;
+
             &__img{
                 img{
                     width: 396px;
@@ -397,7 +402,6 @@ body{
                 padding: 11px 27px 0 34px;
                 display: flex;
                 justify-content: space-between;
-                box-shadow: 0 50px 0 0 #E5E5E5B2;
 
                 &__scroll{
 
@@ -496,7 +500,7 @@ body{
             height: 390px;
             background-color: #FFFFFF;
             border-radius: 35px;
-            box-shadow: 0 50px 0 0 #E5E5E5B2;
+            box-shadow: 1px 40px 75px 5px #CBCBCB;
 
             &__img{
                 width: 225px;
@@ -692,7 +696,7 @@ body{
         background-color: white;
         border-radius: 25px;
         padding: 38px 0 0 40px;
-        box-shadow: 0 100px 0 0 rgba(#323142, 0.2);
+        box-shadow: 1px 140px 100px 1px #EDF2F7;
 
 
         &__menu{
@@ -834,6 +838,8 @@ body{
             border-radius: 20px;
             padding: 38px 0 0 43px;
             background-color: white;
+            box-shadow: 2px 20px 75px 8px #CBCBCB;
+
 
             &__info{
                 width: 436px;
@@ -879,12 +885,14 @@ body{
         &__otherCards{
             display: flex;
             justify-content: space-between;
+
             &__half{
                 width: 528px;
                 height: 239px;
                 border-radius: 20px;
                 padding: 38px 0 0 43px;
                 background-color: white;
+                box-shadow: 2px 20px 75px 8px #CBCBCB;
 
                 &__text{
                     width: 442px;
@@ -921,6 +929,7 @@ body{
             hr:nth-of-type(2){
                 width: 667px;
                 opacity: 0.2;
+                box-shadow: 2px -20px 75px 9px #CBCBCB;
             }
         }
     }
